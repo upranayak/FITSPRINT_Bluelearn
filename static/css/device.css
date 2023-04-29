@@ -1,0 +1,26 @@
+.mainCheck{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:30px;
+}
+.check .Button {
+    text-align: center;
+    background-color: rgb(247, 225, 199);
+}
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

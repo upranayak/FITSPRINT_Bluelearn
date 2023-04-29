@@ -1,0 +1,202 @@
+:root{
+  --main-bg-color:rgb(0, 0, 0);
+  --navbarcolor1:red;
+  --navbarcolor2:rgb(255, 102, 0);
+  --filter:blur(0px);
+  --border:red;
+}
+.darktheme{
+  --main-bg-color:rgb(226, 247, 255);
+  --navbarcolor1: rgb(129 129 129);
+  --navbarcolor2:rgb(251, 225, 208);
+  --filter:blur(10px);
+  --border:black;
+}
+
+body{
+    background-color:var(--main-bg-color);
+      margin:0px;
+      padding:0px;
+      color: rgb(122, 107, 107);
+      margin-top: 20px;
+  }
+
+	#b{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        z-index: -1;
+        margin-top: -0.756rem;
+        /* margin-left: -10px; */
+      }
+      #b::before{
+        content: "";
+        background-image: conic-gradient(var(--border), var(--main-bg-color) 50deg,var(--main-bg-color) 50deg, var(--main-bg-color) 270deg);
+      width:20000%;
+        height:20000%;
+        position: absolute;
+        animation: rotate 4.1s linear infinite;
+      }
+      #b::after{
+        width: 99%;
+        height: 97%;
+        background: var(--main-bg-color);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff0052;
+        margin-top: -10px;
+  
+      }
+          @keyframes rotate {
+              0%{
+                  transform: rotate(0deg);
+              }
+              100%{
+                  transform: rotate(-360deg);
+              }
+          }
+      
+  #myVideo {
+    position: absolute;
+    /* right: 50px;
+    bottom: 50px; */
+    width: 200%;
+    margin-left: -750px;
+    height: 90%;
+    z-index: -1;
+    filter:var(--filter);
+/* margin-top: 100px; */
+  }
+
+ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(90deg, var(--navbarcolor1) 24%, var(--navbarcolor2) 55%, var(--navbarcolor1) 100%);
+
+  /* position: sticky; */
+  /* width: 100%; */
+}
+li {
+    float: left;
+  }
+  
+li a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+  .icon{
+    width: 30px;
+    height: 25px;
+    
+  }
+
+  .cards_container{
+    /* display: inline; */
+    /* background-color: rgb(35, 97, 255); */
+   position: absolute;
+   top: 200px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+  
+  }
+  .card_one{
+    width: 400px;
+    height: 500px;
+    /* display: inline-block; */
+    background-color: var(--main-bg-color);
+    color: var(--main-bg-color);
+    border-radius: 10px;
+   
+
+  }
+  .card_two{
+    width: 400px;
+    height: 500px;
+    /* display: inline-block; */
+    background-color: var(--main-bg-color);
+    color: var(--main-bg-color);
+    border-radius: 10px;
+    box-shadow: 10px var(--navbarcolor1);
+  }
+  .card_one  img{
+    margin-left: 25px;
+    width: 350px;
+    height: 300px;
+    margin-top: 10%;
+    filter: brightness(70%);
+    /* filter: blur(-100px); */
+
+  }
+  .card_two img{
+    filter: brightness(70%);
+    margin-left: 25px;
+    width: 350px;
+    height: 300px;
+    margin-top: 10%;
+
+  }
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.button1{
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    background-color: var(--navbarcolor1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.button1:hover{
+    cursor: pointer;
+}
+.heading{
+    margin-top: 40px;
+    margin-left: 220px;
+    color: white;
+    z-index: 100;
+    /* background-color: red; */
+    /* margin-left: 100px; */
+font-family:cursive;
+font-size: 30px;
+}
+.heading1{
+  margin-top: 20px;
+  margin-left: 100px;
+  color: white;
+  z-index: 100;
+  /* background-color: red; */
+  /* margin-left: 100px; */
+font-family:cursive;
+font-size: 30px;
+}
+.themeimage{
+  text-align: end;
+  margin-top: 550px;
+}
+
+.themeimage img{
+   width: 50px;
+  height: 50px;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}

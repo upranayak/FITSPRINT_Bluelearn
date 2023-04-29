@@ -1,0 +1,147 @@
+body{
+  margin: 0px;
+  padding:0px ;
+  background-color: black;
+}
+#backimage
+{
+  position: absolute;
+  /* right: 200px; */
+  
+  bottom: 5px;
+  width: 100%;
+  height: 98%;
+  z-index:-1;
+  filter: brightness(60%);
+
+}
+
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background: linear-gradient(90deg, rgb(14, 155, 255) 24%, rgb(39, 237, 255) 55%, rgb(0, 183, 255) 100%);
+filter: brightness(90%);
+/* position: sticky; */
+/* width: 100%; */
+}
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 20px 30px;
+  text-decoration: none;
+}
+.icon{
+  width: 30px;
+  height: 25px;
+  
+}
+.container{
+  /* margin-top: 30px; */
+  width:100%;
+  height: 700px;
+  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+/* margin-left: 300px; */
+
+}
+.cardone{
+/* width:400px ;
+height: 400px; */
+background-color: rgb(134, 134, 134,0.1);
+/* background-color: rgb(0, 0, 0); */
+/* background-image: url('./image2/allinone.png'); */
+color: black;
+display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ font-size: 40px;
+ box-shadow: 0px 0px 1px rgb(81, 81, 81);
+ /* margin: px; */
+ padding:5px ;
+ transition: transform .2s;
+ text-decoration: none;
+
+
+}
+.cardone:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgb(124, 124, 124);
+
+}
+
+.cardtwo{
+  /* width:200px ;
+  height: 400px; */
+  background-color: rgb(134, 134, 134,0.1);
+  /* background-image: url('./image2/allinone.png'); */
+  color: black;
+  display: flex;
+  flex-direction: column;
+     justify-content: space-evenly;
+     font-size: 40px;
+     box-shadow: 0px 0px 1px rgb(118, 118, 118);
+     /* margin: px; */
+     padding:5px ;
+     transition: transform .2s;
+cursor: pointer;
+text-decoration: none;
+filter: contrast(1);
+}
+.cardtwo:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgb(87, 87, 87);
+
+}
+
+.cardone img {
+ width: 350px;
+ height: 200px;
+ /* position: absolute; */
+ border-radius: 10px;
+ /* filter: brightness(60%); */
+}
+.cardtwo img {
+  width: 350px;
+  height: 200px;
+  /* position: absolute; */
+  /* filter: brightness(60%); */
+  border-radius: 10px;
+}
+.cardone .content{
+  /* margin-left: 500px; */
+
+  color:rgb(252 255 154);
+  font-family:cursive;
+  /* margin-top: 40px; */
+  text-align: center;
+}
+.cardtwo .content{
+  /* margin-left: 500px; */
+  color:rgb(252 255 154);
+  font-family:cursive;
+  /* margin-top: 40px; */
+  text-align: center;
+  /* background-color: rgb(139, 139, 139); */
+}
+
+
+.heading {
+  color: white;
+  font-size: 30px;
+  margin-left: 48px;
+  margin-top: 52px;
+  position: absolute;
+}

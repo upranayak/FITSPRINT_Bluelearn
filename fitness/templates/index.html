@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+
+<div id="b"></div>
+<!-- <video autoplay muted loop id="myVideo">
+    <source src="/static/images/depositphotos_82238396-stock-video-boxer-training-shadow-boxing-over.mp4"
+            type="video/mp4">
+</video> -->
+
+
+<!-- navbar start -->
+<div class="navbar" style="z-index:101 ;">
+    <ul>
+        <b>
+
+            <li><a class="webname" href="#home" style="font-size: 20px;">FITSPRINT</a></li>
+        </b>
+        {% if request.session.username %}
+        <li><a href="/logout">Logout</a></li>
+        {% else %}
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">SignUp</a></li>
+        {% endif %}
+    </ul>
+</div>
+
+<!-- navbar end -->
+<div class="heading">
+    Unleash the power of fitness
+</div>
+<!-- two cards start -->
+<div class="cards_container">
+    <div class="card_one">
+        <div class="heading1">Indoor activities</div>
+        <div class="image">
+            <img src="/static/images/WhatsApp Image 2023-01-27 at 4.36.47 PM.jpeg" alt="">
+        </div>
+        <div class="content">
+            <a href="Indoor">
+                <button class="button1">explore</button>
+            </a>
+
+        </div>
+    </div>
+    <div class="card_two">
+        <div class="heading1">outdoor activities</div>
+        <div class="image">
+            <img src="/static/images/WhatsApp Image 2023-01-27 at 4.35.19 PM.jpeg" alt="">
+        </div>
+        <div class="content">
+            <a href="/outdoor">
+                <button class="button1">explore</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- two cards end -->
+</body>
+</html>
+
+<script>
+        var theme = document.getElementById("theme");
+        theme.onclick = function () {
+            document.body.classList.toggle("darktheme");
+            // console.log("woeking")
+        }
+
+        var time = new Date();
+        var t = time.toLocaleString('en-US', { hour: 'numeric', hour12: true })
+        var ans = time.getHours();
+        const last2 = t.slice(-2);
+        if(ans<6 || ans>18){
+             document.body.classList.toggle("darktheme");
+        }
+
+
+
+
+</script>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>WEEK_SLOTS</title>
+  <link rel="stylesheet" href="/static/css/timing_all.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <form action="/success" method="post">
+    {% csrf_token %}
+    <div class="header">
+      <h1>Your basic fitness activity is perfect with us..!</h1>
+      <h1>15% off then regular prices</h1>
+      <p>Powered by FITSPRINT</p>
+      <button type="submit">Pay:1500</button>
+    </div>
+    <div class="row1-container">
+      <div class="box box-down cyan">
+        <h2>BasketBall</h2>
+        <div>
+        </div>
+        <p><b>MONDAY & THURSDAY :</b></p>
+        <p><b>During Morning and Evening :</b> Ramaiah Court,Mathikere</p>
+        <p><b>During Afternoon and Night:</b>  MJ complex,Koramangla</p>
+        <img src="/static/images/basketball.jpeg" alt="">
+      </div>
+  
+      <div class="box red">
+        <h2>Cricket</h2>
+        <p><b> WEDNESDAY: </b></p>
+        <p><b>During Morning and Evening :</b> Ramaiah Ground,Mathikere</p>
+        <p><b>During Afternoon and Night:</b>  SS complex,Mathikere</p>
+        <img src="/static/images/cricket.jpeg" alt="">
+      </div>
+  
+  
+      <div class="box box-down blue">
+        <h2>FootBall</h2>
+        <p><b>TUESDAY & FRIDAY :</b></p>
+        <p><b>During Morning and Evening :</b> Banana Kick,New Bel Road</p>
+        <p><b>During Afternoon and Night:</b>  Match Day, 80 feet road </p>
+        <img src="/static/images/football.jpeg" alt="">
+      </div>
+    </div>
+    <div class="row2-container">
+      <div class="box orange">
+        <h2>Badminton</h2>
+        <p><b>SUNDAY :</b></p>
+        <p><b>During Morning and Evening :</b> Serve and Smash,Indra Nagar</p>
+        <p><b>During Afternoon and Night:</b>  JP Court,New Bel Road</p>
+        <img src="/static/images/badminton.jpeg" alt="">
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
