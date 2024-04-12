@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
 * Outdoor fitness program option
 * Ability to bet on fitness goals and win prizes
 * Discounts on sports Packages
-* Machine Learning model for predicting the vitals of the body
+* Machine Learning model for predicting the vitals of our body
 
 
 ### Built With
